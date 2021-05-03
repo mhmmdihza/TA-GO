@@ -1,0 +1,29 @@
+<div class="center">
+    <table style="margin-left:auto;margin-right:auto;" border="5">
+        <tr>
+            <th colspan="4" style="text-align: left;">
+                <label for="standard-select" style="background-color:#D1F2EB;">Jumlah Barang per halaman</label>
+                <div class="select" >
+                    <select id="standard-select" onchange="if (this.selectedIndex) myFunction(this.value)">
+                        <option value="20">-</option>
+                        %v
+                    </select>
+                    <span class="focus"></span>
+                </div>
+            </th>
+        </tr>
+        <tr>
+            <th colspan="4" style="text-align: left;">
+                <label for="standard-select" style="background-color:#D7DBDD;">Urut berdasarkan</label>
+                <div class="select" >
+                    <select id="standard-select" onchange="if (this.selectedIndex) myFunction2(this.value)">
+                        <option value="20">-</option>
+                        %v
+                    </select>
+                    <span class="focus"></span>
+                </div>
+            </th>
+        </tr>
+        %v
+    </table>
+</div>

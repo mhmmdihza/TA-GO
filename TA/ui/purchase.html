@@ -1,0 +1,117 @@
+<div class="center">
+
+    <form action="/ord" method="post">
+        <input type="text" id="item" name="item" value="%v" hidden>
+        <table style="margin-left:auto;margin-right:auto;" border="5">
+            <tr style="height: 30px;">
+                <th colspan="2">
+                    <h1>Form Pembelian</h1>
+                </th>
+            </tr>
+            <tr style="height: 30px;">
+                <td><label for="fname">Nama Pemesan :</label></td>
+                <td><input type="text" id="name" name="name"></td>
+            </tr>
+            <tr style="height: 30px;">
+                <td><label for="lname">No. Telp/Handphone :</label></td>
+                <td><input type="text" id="nohp" name="nohp"></td>
+            </tr>
+            <tr style="height: 30px;">
+                <td><label for="fname">Email :</label></td>
+                <td><input type="text" id="email" name="email"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div id="map"></div>
+                    </br>
+                </td>
+            </tr>
+            <tr style="height: 30px;">
+                <td><label for="fname">Alamat :</label></td>
+                <td><textarea rows="2" cols="23" id="lat" name="lat" readonly="yes"></textarea></td>
+            </tr>
+            <tr style="height: 90px;">
+                <td><label for="fname">Detail Alamat :</label></td>
+                <td><textarea rows="4" cols="23" name="address" ></textarea></td>
+            </tr>
+            <tr style="height: 30px;">
+                <td><label for="fname">Pembayaran :</label></td>
+                <td>
+                    <select style="width:180px">
+                        <option value="DigitalBankingTA">Digital Banking (VA)</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Bayar
+                    <input type=image width="30px" height="30px" src=data:image/png;base64,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 value="Beli">
+                </td>
+            </tr>
+        </table>
+       <!-- <input type="text" id="lng" readonly="yes"> -->
+    </form>
+</div>
+<script>
+    var map;
+    var marker = false;
+    function initMap() {
+        geocoder = new google.maps.Geocoder();
+        var centerOfMap = new google.maps.LatLng(-6.166061710904945, 106.8004889450595);
+        var options = {
+            center: centerOfMap, //Set center.
+            zoom: 15 //The zoom value.
+        };
+        map = new google.maps.Map(document.getElementById('map'), options);
+
+        google.maps.event.addListener(map, 'click', function(event) {
+            var clickedLocation = event.latLng;
+            //If the marker hasn't been added.
+            if(marker === false){
+                //Create the marker.
+                marker = new google.maps.Marker({
+                    position: clickedLocation,
+                    map: map,
+                    draggable: true //make it draggable
+                });
+                //Listen for drag events!
+                google.maps.event.addListener(marker, 'dragend', function(event){
+                    markerLocation();
+                });
+            } else{
+                //Marker has already been added, so just change its location.
+                marker.setPosition(clickedLocation);
+            }
+            //Get the marker's location.
+            markerLocation();
+            GetAddress();
+        });
+    }
+
+    //This function will get the marker's current location and then add the lat/long
+    //values to our textfields so that we can save the location.
+    function markerLocation(){
+        //Get location.
+        var currentLocation = marker.getPosition();
+        //Add lat and lng values to a field that we can save.
+        document.getElementById('lat').value = "lat " + currentLocation.lat()+ " long "+currentLocation.lng(); //latitude
+        //document.getElementById('lng').value = currentLocation.lng(); //longitude
+    }
+    function GetAddress() {
+        var lat = parseFloat(document.getElementById("lat").value);
+        var lng = parseFloat(document.getElementById("lng").value);
+        var latlng = new google.maps.LatLng(lat, lng);
+        var geocoder = geocoder = new google.maps.Geocoder();
+        geocoder.geocode({ 'latLng': latlng }, function (results, status) {
+            if (status == google.maps.GeocoderStatus.OK) {
+                if (results[1]) {
+                    alert("Location: " + results[1].formatted_address);
+                }
+            }
+            //else{
+            //alert("gagal"+status)}
+
+        });
+    }
+    //Load the map when the page has finished loading.
+    google.maps.event.addDomListener(window, 'load', initMap);
+</script>

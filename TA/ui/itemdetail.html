@@ -1,0 +1,38 @@
+<div class="center">
+  <table style="margin-left:auto;margin-right:auto;">
+    <tr>
+      <td>
+                %v
+      </td>
+    </tr>
+    <tr>
+      <td>
+        %v
+      </td>
+    </tr>
+    <tr>
+      <td>
+        %v
+      </td>
+    </tr>
+    <tr>
+      <td>
+        %v
+        </br>
+        <form action="/additemcookie" method="get">
+          <input type="hidden" id="iddetail" name="iddetail" value="%v" /input>
+          <input type="submit" value="Tambah Ke Keranjang">
+        </form>
+        <form action="/purchase" method="get">
+          <input type="hidden" id="idpurchase" name="idpurchase" value="%v" /input>
+          <input type="submit" value="Beli Sekarang">
+        </form>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="%v" alt="detail" style="width: 100%;height: auto;"width="300" height="350">
+      </td>
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,63 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap";.wrapper{max-width:1140px;padding-left:1rem;padding-right:1rem;margin-left:auto;margin-right:auto}*,*:before,*:after{box-sizing:border-box}a{text-decoration:none;color:#222}html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}body{font-family:roboto,sans-serif}.sr-only{position:absolute;clip:rect(1px,1px,1px,1px);padding:0;border:0;height:1px;width:1px;overflow:hidden}.button{-webkit-appearance:none;-moz-appearance:none;appearance:none;color:#fff;background-color:#2fa0f6;min-width:120px;padding:.5rem 1rem;border-radius:5px;text-align:center}.button svg{display:inline-block;vertical-align:middle;width:24px;height:24px;fill:#fff}.button span{display:none}@media(min-width:600px){.button span{display:initial}}.button--icon{min-width:initial;padding:.5rem}
+.pagination {
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    margin: auto;
+}
+
+.pagination a {
+    color: black;
+    float: center;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+.disabled {
+    pointer-events: none;
+    cursor: default;
+    opacity: 2;
+}
+select {
+// A reset of styles, including removing the default dropdown arrow
+appearance: none;
+// Additional resets for further consistency
+    background-color: #D1F2EB;
+    margin:auto;
+    border: none;
+    padding: 0 1em 0 0;
+    margin: 0;
+    width: 30%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+    box-sizing: border-box;
+    text-align:center;
+}
+select::-ms-expand {
+    display: none;
+}
+select {
+    outline: none;
+}
+.center {
+    overflow-x:auto;
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+}
+#map{ width:350px; height: 250px; }
